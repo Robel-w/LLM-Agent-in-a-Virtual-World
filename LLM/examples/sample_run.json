@@ -1,0 +1,1933 @@
+{
+  "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+  "success": true,
+  "termination_reason": "goal_complete",
+  "steps": [
+    {
+      "step": 1,
+      "observation": {
+        "step": 0,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "facing": "east",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 1,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 2,
+            "locked": null
+          },
+          {
+            "id": "golden_key",
+            "name": "golden key",
+            "kind": "item",
+            "position": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 3,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You awaken in a dim corridor. Find the key and reach the exit.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 1/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 1/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (2, 3).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 2,
+      "observation": {
+        "step": 1,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "facing": "east",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 2,
+            "kind": "floor",
+            "entity": {
+              "id": "note",
+              "name": "crumpled note",
+              "kind": "readable",
+              "locked": null
+            }
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 1,
+            "locked": null
+          },
+          {
+            "id": "golden_key",
+            "name": "golden key",
+            "kind": "item",
+            "position": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 2,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You move forward to (2, 3).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 2/19 toward the exit.",
+      "action": {
+        "action": "turn",
+        "direction": "right"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 2/19 toward the exit.\", \"action\": \"turn\", \"direction\": \"right\"}",
+      "result": "You turn right; now facing south.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 3,
+      "observation": {
+        "step": 2,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "facing": "south",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 3,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 1,
+            "locked": null
+          },
+          {
+            "id": "golden_key",
+            "name": "golden key",
+            "kind": "item",
+            "position": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 2,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You turn right; now facing south.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 3/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 3/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (2, 4).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 4,
+      "observation": {
+        "step": 3,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 4
+          },
+          "facing": "south",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 5,
+            "kind": "floor",
+            "entity": {
+              "id": "golden_key",
+              "name": "golden key",
+              "kind": "item",
+              "locked": null
+            }
+          },
+          {
+            "x": 1,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "golden_key",
+            "name": "golden key",
+            "kind": "item",
+            "position": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 1,
+            "locked": null
+          },
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 2,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You move forward to (2, 4).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 4/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 4/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (2, 5).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 5,
+      "observation": {
+        "step": 4,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 5
+          },
+          "facing": "south",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 5,
+            "kind": "floor",
+            "entity": {
+              "id": "golden_key",
+              "name": "golden key",
+              "kind": "item",
+              "locked": null
+            }
+          },
+          {
+            "x": 2,
+            "y": 6,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "golden_key",
+            "name": "golden key",
+            "kind": "item",
+            "position": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 0,
+            "locked": null
+          },
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 3,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You move forward to (2, 5).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 5/19 toward the exit.",
+      "action": {
+        "action": "pick_up"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 5/19 toward the exit.\", \"action\": \"pick_up\"}",
+      "result": "You pick up the golden key.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 6,
+      "observation": {
+        "step": 5,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 5
+          },
+          "facing": "south",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 6,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 3,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You pick up the golden key.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 6/19 toward the exit.",
+      "action": {
+        "action": "turn",
+        "direction": "right"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 6/19 toward the exit.\", \"action\": \"turn\", \"direction\": \"right\"}",
+      "result": "You turn right; now facing west.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 7,
+      "observation": {
+        "step": 6,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 5
+          },
+          "facing": "west",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 6,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 3,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You turn right; now facing west.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 7/19 toward the exit.",
+      "action": {
+        "action": "turn",
+        "direction": "right"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 7/19 toward the exit.\", \"action\": \"turn\", \"direction\": \"right\"}",
+      "result": "You turn right; now facing north.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 8,
+      "observation": {
+        "step": 7,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 5
+          },
+          "facing": "north",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 5,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 3,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You turn right; now facing north.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 8/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 8/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (2, 4).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 9,
+      "observation": {
+        "step": 8,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 4
+          },
+          "facing": "north",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 1,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 2,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You move forward to (2, 4).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 9/19 toward the exit.",
+      "action": {
+        "action": "turn",
+        "direction": "right"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 9/19 toward the exit.\", \"action\": \"turn\", \"direction\": \"right\"}",
+      "result": "You turn right; now facing east.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 10,
+      "observation": {
+        "step": 9,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 2,
+            "y": 4
+          },
+          "facing": "east",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 2,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 2,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 2,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You turn right; now facing east.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 10/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 10/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (3, 4).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 11,
+      "observation": {
+        "step": 10,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 3,
+            "y": 4
+          },
+          "facing": "east",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 3,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 4,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 3,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "note",
+            "name": "crumpled note",
+            "kind": "readable",
+            "position": {
+              "x": 2,
+              "y": 2
+            },
+            "distance": 3,
+            "locked": null
+          }
+        ],
+        "last_feedback": "You move forward to (3, 4).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 11/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 11/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (4, 4).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 12,
+      "observation": {
+        "step": 11,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 4,
+            "y": 4
+          },
+          "facing": "east",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 4,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 4,
+            "y": 3,
+            "kind": "wall"
+          },
+          {
+            "x": 4,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [],
+        "last_feedback": "You move forward to (4, 4).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 12/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 12/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (5, 4).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 13,
+      "observation": {
+        "step": 12,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 5,
+            "y": 4
+          },
+          "facing": "east",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 5,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 5,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "locked door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 3,
+            "locked": true
+          }
+        ],
+        "last_feedback": "You move forward to (5, 4).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 13/19 toward the exit.",
+      "action": {
+        "action": "turn",
+        "direction": "left"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 13/19 toward the exit.\", \"action\": \"turn\", \"direction\": \"left\"}",
+      "result": "You turn left; now facing north.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 14,
+      "observation": {
+        "step": 13,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 5,
+            "y": 4
+          },
+          "facing": "north",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 5,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 4,
+            "y": 4,
+            "kind": "floor"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "locked door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 3,
+            "locked": true
+          }
+        ],
+        "last_feedback": "You turn left; now facing north.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 14/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 14/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (5, 3).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 15,
+      "observation": {
+        "step": 14,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "facing": "north",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 5,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 2,
+            "kind": "floor"
+          },
+          {
+            "x": 4,
+            "y": 3,
+            "kind": "wall"
+          },
+          {
+            "x": 6,
+            "y": 3,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "locked door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 2,
+            "locked": true
+          }
+        ],
+        "last_feedback": "You move forward to (5, 3).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 15/19 toward the exit.",
+      "action": {
+        "action": "turn",
+        "direction": "right"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 15/19 toward the exit.\", \"action\": \"turn\", \"direction\": \"right\"}",
+      "result": "You turn right; now facing east.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 16,
+      "observation": {
+        "step": 15,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "facing": "east",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 5,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 6,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 2,
+            "kind": "floor"
+          },
+          {
+            "x": 5,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "locked door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 2,
+            "locked": true
+          }
+        ],
+        "last_feedback": "You turn right; now facing east.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 16/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 16/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (6, 3).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 17,
+      "observation": {
+        "step": 16,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 6,
+            "y": 3
+          },
+          "facing": "east",
+          "inventory": [
+            {
+              "id": "golden_key",
+              "name": "golden key",
+              "description": "A small golden key that looks like it fits an old door."
+            }
+          ]
+        },
+        "egocentric_view": [
+          {
+            "x": 6,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 7,
+            "y": 3,
+            "kind": "door",
+            "entity": {
+              "id": "exit_door",
+              "name": "locked door",
+              "kind": "door",
+              "locked": true
+            }
+          },
+          {
+            "x": 6,
+            "y": 2,
+            "kind": "floor"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "locked door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 1,
+            "locked": true
+          }
+        ],
+        "last_feedback": "You move forward to (6, 3).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 17/19 toward the exit.",
+      "action": {
+        "action": "use",
+        "item_id": "golden_key",
+        "target_id": "exit_door"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 17/19 toward the exit.\", \"action\": \"use\", \"item_id\": \"golden_key\", \"target_id\": \"exit_door\"}",
+      "result": "You unlock the open door with the golden key.",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 18,
+      "observation": {
+        "step": 17,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 6,
+            "y": 3
+          },
+          "facing": "east",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 6,
+            "y": 3,
+            "kind": "floor"
+          },
+          {
+            "x": 7,
+            "y": 3,
+            "kind": "door",
+            "entity": {
+              "id": "exit_door",
+              "name": "open door",
+              "kind": "door",
+              "locked": false
+            }
+          },
+          {
+            "x": 6,
+            "y": 2,
+            "kind": "floor"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "open door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 1,
+            "locked": false
+          }
+        ],
+        "last_feedback": "You unlock the open door with the golden key.",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 18/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 18/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You move forward to (7, 3).",
+      "success": true,
+      "goal_complete": false
+    },
+    {
+      "step": 19,
+      "observation": {
+        "step": 18,
+        "max_steps": 40,
+        "goal": "Find the golden key, unlock the exit door, and step onto the exit tile.",
+        "agent": {
+          "position": {
+            "x": 7,
+            "y": 3
+          },
+          "facing": "east",
+          "inventory": []
+        },
+        "egocentric_view": [
+          {
+            "x": 7,
+            "y": 3,
+            "kind": "door",
+            "entity": {
+              "id": "exit_door",
+              "name": "open door",
+              "kind": "door",
+              "locked": false
+            }
+          },
+          {
+            "x": 8,
+            "y": 3,
+            "kind": "exit"
+          },
+          {
+            "x": 7,
+            "y": 2,
+            "kind": "floor"
+          },
+          {
+            "x": 7,
+            "y": 4,
+            "kind": "floor"
+          }
+        ],
+        "nearby_entities": [
+          {
+            "id": "exit_door",
+            "name": "open door",
+            "kind": "door",
+            "position": {
+              "x": 7,
+              "y": 3
+            },
+            "distance": 0,
+            "locked": false
+          }
+        ],
+        "last_feedback": "You move forward to (7, 3).",
+        "available_actions": [
+          {
+            "action": "move",
+            "description": "Step forward one tile in the direction you face"
+          },
+          {
+            "action": "turn",
+            "direction": "left|right",
+            "description": "Rotate in place"
+          },
+          {
+            "action": "pick_up",
+            "description": "Pick up an item on your current tile"
+          },
+          {
+            "action": "use",
+            "item_id": "...",
+            "target_id": "optional",
+            "description": "Use a carried item on what is in front of you"
+          },
+          {
+            "action": "examine",
+            "description": "Look closely at your current tile"
+          },
+          {
+            "action": "read",
+            "description": "Read text on your current tile"
+          },
+          {
+            "action": "wait",
+            "description": "Pause and reconsider"
+          }
+        ]
+      },
+      "thought": "Executing planned step 19/19 toward the exit.",
+      "action": {
+        "action": "move"
+      },
+      "raw_response": "{\"thought\": \"Executing planned step 19/19 toward the exit.\", \"action\": \"move\"}",
+      "result": "You step through the exit. The mission is complete!",
+      "success": true,
+      "goal_complete": true
+    }
+  ]
+}

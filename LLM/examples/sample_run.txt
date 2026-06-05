@@ -1,0 +1,24 @@
+Goal: Find the golden key, unlock the exit door, and step onto the exit tile.
+Result: SUCCESS in 19 steps
+
+Step  1 | move              | You move forward to (2, 3).
+Step  2 | turn right        | You turn right; now facing south.
+Step  3 | move              | You move forward to (2, 4).
+Step  4 | move              | You move forward to (2, 5).
+Step  5 | pick_up           | You pick up the golden key.
+Step  6 | turn right        | You turn right; now facing west.
+Step  7 | turn right        | You turn right; now facing north.
+Step  8 | move              | You move forward to (2, 4).
+Step  9 | turn right        | You turn right; now facing east.
+Step 10 | move              | You move forward to (3, 4).
+Step 11 | move              | You move forward to (4, 4).   [through wall gap]
+Step 12 | move              | You move forward to (5, 4).
+Step 13 | turn left         | You turn left; now facing north.
+Step 14 | move              | You move forward to (5, 3).
+Step 15 | turn right        | You turn right; now facing east.
+Step 16 | move              | You move forward to (6, 3).
+Step 17 | use golden_key    | You unlock the exit door with the golden key.
+Step 18 | move              | You move forward to (7, 3).
+Step 19 | move              | You step through the exit. The mission is complete!
+
+Full structured JSON log: sample_run.json
